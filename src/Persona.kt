@@ -1,19 +1,14 @@
-class Persona(nombre:String, edad:Int) {
+class Persona(var nombre: String, var peso: Double, var altura: Double,var imc: Double) {
 
-    var nombre:String = nombre
-    var edad:Int = edad
+    constructor(nombre: String,imc: Double): this(nombre){
+        this.imc = imc
+    }
 
     override fun equals(other: Any?): Boolean {
         return super.equals(other)
     }
 
     override fun toString(): String {
-        return "Persona (nombre = $nombre, edad = $edad)"
-    }
-
-    override fun hashCode(): Int {
-        var result = nombre.hashCode()
-        result = 31 * result + edad.hashCode()
-        return result
+        return "Persona (nombre = $nombre, peso = $peso)"
     }
 }
