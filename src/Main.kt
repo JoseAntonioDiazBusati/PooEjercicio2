@@ -28,5 +28,6 @@
 
 
 fun main (args: Array<String>) {
-    println()
+    val persona1 = Persona(nombre = "Pedro Sanchez",84.5,1.82)
+    val persona1 = Persona()
 }
