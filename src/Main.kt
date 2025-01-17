@@ -28,6 +28,13 @@
 
 
 fun main (args: Array<String>) {
-    val persona1 = Persona(nombre = "Pedro Sanchez",84.5,1.82)
-    val persona1 = Persona()
+    val persona1 = Persona("Pedro Sanchez",84.5,1.82)
+    val persona2 = Persona(45.6,0.85)
+    val persona3 = Persona(70.9,1.94)
+
+    println(persona1)
+    println(persona2)
+    println(persona3)
+
+
 }

@@ -15,14 +15,11 @@ class Persona(var peso: Double, var altura: Double) {
     override fun equals(other: Any?): Boolean {
         if (this === other) return true
         if (other !is Persona) return false
-        return this.peso == other.peso && this.altura == other.altura
+        return this.peso == other.peso && this.altura == other.altura && this.nombre == other.nombre
     }
 
     override fun hashCode(): Int {
-        var result = nombre.hashCode()
-        result = 32 * peso.hashCode()
-        result = 32 * altura.hashCode()
-        return result
+        return listOf(peso, altura, nombre).hashCode()
     }
 
     override fun toString(): String {
